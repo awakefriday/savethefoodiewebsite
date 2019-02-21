@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Save the Foodie</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+
+    <!-- Bootstrap 4 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="css/savethefoodie2-style.css">
+
+</head>
+
+<body>
+        <section>
+
+                 
+                <div class="nav-toggle">
+                    <div class="nav-background"></div>
+                    <div class="nav-toggle-bar"></div>
+                  </div>
+                  <nav class="nav">
+                      <a href="index.html"><img id="logo" src="Images/logo.png" alt="logo"></a>
+                    <ul class="nav-content" style= margin-top:30%>  
+                      <li><a href="savethefoodie1.html">Misconception</a></li> 
+                      <li><a href="savethefoodie2.html">History of Foodies</a></li>
+                      <li><a href="savethefoodie3.html">Foodie Traits</a></li>
+                      <li><a href="savethefoodie4.html">Foodie Influencers</a></li>
+                      <li><a href="savethefoodie5.html">Cooking Blogs</a></li>
+                      <li><a href="savethefoodie6.html">Conclusion</a></li>
+                      <li><a href="savethefoodievid.html">Video: Life of a Foodie</a></li>
+                      <li><a href="savethefoodiear.html">AR Scan</a></li> 
+                    </ul>
+                  
+                  </nav>
+                </section>
+
+ 
+ <div id="main-content" class="row">
+ <div class="col-sm-12"> 
+
+      <section>
+                <a href="savethefoodie1.html">
+                <img id="arrow" src="Images/arrow.png" alt="back button">
+              </a>
+   </section>
+   
+<section>
+    <img id="title" src="Images/history.png" alt="title">
+</section>
+ 
+
+<section>
+    
+        <div class= "slidecontainer">
+            <input type="range" min="1" max="100" value="0" class="slider" id="myRange" />
+        </div>
+
+        <img id="drag" src="Images/dragme.png" alt="drag me"> 
+
+        <span id="first-marker"></span>
+        <span id="second-marker"></span>
+        <span id="third-marker"></span>
+
+        <img id="years" src="Images/years.png" alt="years">
+             
+</section>
+
+<section>
+    <div class="group">
+<img id="plate" src="Images/plate1.png" alt="plate">
+        
+<div id="transition"> 
+
+    <img id="healthy" src="Images/veggies.png" alt="veggies">
+    <h1 id="first">Baby Boomers</h1>
+    <p1>In the '70s and '80s, New Age Boomers</br>
+        pioneered the idea that people should</br>
+        pay attention to what they consume</br>
+        and how they consume it. </p1>
+
+     <img id="crackers"  src="Images/cookies.png"  alt="crackers"> 
+      <h1 id="second">Gen X</h1>
+     <p2>Generation X later brought foodie</br>
+        culture into the world and expanded</br>
+        the definition of fine food to include</br>
+        mundane fare like cheese and crackers,</br>
+        welcoming ethnic options</p2>
+
+   <img id="modern" src="Images/modern.png" alt="modern">
+   <h1 id="third">Millennials</h1>
+    <p3>Today's foodie generation love sharing</br>
+       experiences with their friends at the</br>
+       table as well as on social media. The</br>
+       culture is also conventional and not</br>
+       risky to them.</p3> 
+</div>
+</div>
+      
+</section>
+
+<section>
+    <button class="butt2n">Foodie Traits</button>
+</section>
+
+<section>
+    <img id="bar2" src="Images/bar2.png" alt="bar2">
+</section>
+
+</div>
+</div>
+
+
+<script>
+
+    $(document).ready(function(){
+
+        HidePicture("#crackers", 0); // Default hide cracker
+        HidePicture("#modern",0); //Default hide modern
+        HidePicture("#second",0); //Default hide second
+        HidePicture("p2",0); //Default hide p2
+        HidePicture("#third",0) //Default hide third
+        HidePicture("p3",0); //Default hide p3
+
+        $("input[type=range]").change(function(){
+            var sliderValue=$(this).val();
+            
+            if (sliderValue >= 100) {
+
+                ShowPicture("#modern",1500);
+                ShowPicture("#third",1500);
+                ShowPicture("p3",1500);
+                HidePicture("#healthy", 1500);
+                HidePicture("p1", 1500);
+                HidePicture("#first", 1500);
+                HidePicture("#crackers", 1500);
+                HidePicture("#second",1500);
+                HidePicture("p2",1500);
+
+            } else if (sliderValue >= 50) {
+
+                ShowPicture("#crackers", 1500);
+                ShowPicture("#second",1500);
+                ShowPicture("p2",1500);  
+                HidePicture("#healthy", 1500);
+                HidePicture("p1", 1500);
+                HidePicture("#first", 1500);
+                HidePicture("#modern",1500);
+                HidePicture("#third",1500);
+                HidePicture("p3",1500);  
+
+            } else {
+                ShowPicture("#healthy", 1500);
+                ShowPicture("#first", 1500);
+                ShowPicture("p1", 1500);
+                HidePicture("#crackers", 1500);
+                HidePicture("#second",1500);
+                HidePicture("p2",1500); 
+                HidePicture("#modern",1500);
+                HidePicture("#second",0);
+                HidePicture("#third",1500);
+                HidePicture("p3",1500); 
+
+            }
+        });
+
+        function HidePicture(picture, time) {
+            $(picture).fadeOut(time);
+        }
+
+        function ShowPicture(picture, time) {
+            $(picture).fadeIn(time);
+        }
+
+    });
+
+     $(document).ready(function(){
+     $('.butt2n').click(function(){
+     location.href = "savethefoodie3.html";
+
+
+          });
+     });
+
+
+     (function() {
+
+var hamburger = {
+  navToggle: document.querySelector('.nav-toggle'),
+  nav: document.querySelector('nav'),
+
+  doToggle: function(e) {
+    e.preventDefault();
+    this.navToggle.classList.toggle('expanded');
+    this.nav.classList.toggle('expanded');
+  }
+};
+
+hamburger.navToggle.addEventListener('click', function(e) { hamburger.doToggle(e); });
+
+}());
+
+
+</script>
+
+
+
+    
+
+ 
+</body>
+
+</html>

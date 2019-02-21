@@ -1,0 +1,484 @@
+
+
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #F0D5A3;
+} 
+
+.row, .row div {
+    margin: 0;
+    padding: 0;
+}
+
+#misconception {
+  position:absolute;
+  width: 51vw;
+  margin: 15vw 25vw;
+  animation: fadeInUp 0.4s linear forwards;
+  animation-delay: 0.2s;
+  opacity: 0;
+}
+ 
+#cheese {
+  position:absolute;
+  width: 24vw;
+  top: 58px;
+  left: 301px;
+  animation: fadeInUp 0.4s linear forwards;
+  animation-delay: 0.2s;
+  opacity:0;
+}
+
+#garlic {
+  position: absolute;
+  width: 13vw;
+  top:236px;
+  left: 7px;
+  animation: fadeInUp 0.4s linear forwards;
+  animation-delay: 0.4s;
+  opacity: 0;
+}
+
+#onion {
+  position: absolute;
+  width: 14vw;
+  top: 293px;
+  left: 304px;
+  animation: fadeInUp 0.4s linear forwards;
+  animation-delay: 0.6s;
+  opacity: 0;
+}
+
+#tomato {
+  position: absolute;
+  width: 12vw;
+  top: 101vw;
+  left: -1vw;
+  animation: fadeInUp 0.4s linear forwards;
+  animation-delay: 0.8s;
+  opacity: 0;
+}
+
+#banana {
+  position: absolute;
+  width: 24vw;
+  top: 152vw;
+  left: 68vw;
+  animation: fadeInUp 0.4s linear forwards;
+  animation-delay: 1.4s;
+  opacity: 0;
+}
+
+
+#photos img {
+ 
+  width: 73vw;
+  margin: 28vw 13vw;
+  animation: fadeInUp2 0.4s linear forwards;
+  animation-delay: 0.4s;
+  opacity: 0;
+ 
+}
+
+#what {
+  position: absolute;
+  color: #961d28;
+  font-size: 14pt;
+  margin: -23vw 13.5vw;
+  font-family: "Hind Madurai SemiBold";
+  animation: fadeInUp 0.4s linear forwards;
+  animation-delay: 0.6s;
+  opacity:0;
+}
+
+#whatc {
+  position: absolute;
+  color: #515251;
+  font-family: "Hind Madurai Regular";
+  top: 92vw;
+  left: 14vw;
+  font-size: 9.5pt;
+  line-height: 18px;
+  animation: fadeInUp 0.4s linear forwards;
+  animation-delay: 0.8s;
+  opacity: 0;
+}
+
+#why {
+  position: absolute;
+  color: #961d28;
+  font-family: "Hind Madurai SemiBold";
+  font-size: 14pt;
+  margin: 5vw 13.5vw;
+  animation: fadeInUp 0.4s linear forwards;
+  animation-delay: 1s;
+  opacity: 0;
+}
+
+#whyc {
+  position: absolute;
+  color: #515251;
+  font-family: "Hind Madurai Regular";
+  margin: 11vw 14vw;
+  font-size: 9.5pt;
+  line-height: 18px;
+  animation: fadeInUp 0.4s linear forwards;
+  animation-delay: 1.2s;
+  opacity: 0;
+
+}
+
+.butt1n {
+  background-color: #ED9822;
+  border: none;
+  border-radius: 6px;
+  color: #FCFAFC;
+  padding: 9px 16px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 46vw 29vw;
+  letter-spacing: 0.8px;
+  font-family:"Myriad Pro Light";
+  animation: fadeInUp 0.4s linear forwards;
+  animation-delay: 1.4s;
+  opacity: 0;
+}
+
+.butt1n:active {
+  background-color: rgb(184, 110, 26);
+  text-decoration: none;
+  color: rgb(218, 216, 216);
+}
+
+#arrow {
+  position: relative;
+  width: 7vw;
+  margin: -192vw 5vw;
+}
+
+#bar1 {
+  position: relative;
+  width: 96vw;
+  top: -41.5vw;
+  left: 2vw;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+*:focus {
+  outline: none;
+}
+html {  
+  margin: 0;
+  padding: 0;
+  background-color: #F0D5A3;
+  color: white;
+  
+}
+
+body {
+  background: none;
+  color: inherit;
+  font: inherit;
+}
+
+a:link, a:visited, a:hover, a:active {
+  color: white;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+
+.nav-background {
+    position: absolute;
+    border-radius: 5px;
+    background: #ED9822;
+    padding: 5px; 
+    width: 10vw;
+    height: 9vw; 
+    top: -9px;
+    left: -49px;
+
+}
+
+/* nav toggle */
+.nav-toggle {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  cursor: pointer;
+  left: 4rem;
+  position: fixed;
+  top: 2rem;
+  width: 1.9rem;
+  height: 20px;
+  z-index: 2;
+
+}
+
+
+.nav-toggle:hover {
+  opacity: 0.8;
+}
+.nav-toggle .nav-toggle-bar, .nav-toggle .nav-toggle-bar::after, .nav-toggle .nav-toggle-bar::before {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  background: white;
+  content: '';
+  height: 4px;
+  width: 100%;
+
+}
+.nav-toggle .nav-toggle-bar {
+  margin-top: 0;
+  left: -43px;
+}
+.nav-toggle .nav-toggle-bar::after {
+  margin-top: 0.5rem;
+}
+.nav-toggle .nav-toggle-bar::before {
+  margin-top: -0.5rem;
+}
+.nav-toggle.expanded .nav-toggle-bar {
+  background: transparent;
+}
+.nav-toggle.expanded .nav-toggle-bar::after, .nav-toggle.expanded .nav-toggle-bar::before {
+  background: white;
+  margin-top: 0;
+}
+.nav-toggle.expanded .nav-toggle-bar::after {
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.nav-toggle.expanded .nav-toggle-bar::before {
+  -ms-transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+/* nav */
+.nav {
+  -webkit-transition: left 0.5s ease;
+  -moz-transition: left 0.5s ease;
+  -ms-transition: left 0.5s ease;
+  -o-transition: left 0.5s ease;
+  transition: left 0.5s ease;
+    background: #ED9822;
+    cursor: pointer;
+    font-size: 2rem;
+    height: 101vh;
+    left: -18rem;
+    padding: 100px;
+    position: fixed;
+    width: 18rem;
+    z-index: 1;
+    top: -1px;
+}
+
+.nav.expanded {
+  left: 0;
+}
+
+.nav ul {
+  width: 83%;
+  position: absolute;
+  top: 50%;
+  left: 25px;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+
+#logo {
+   position: absolute;
+   width: 55vw;
+   top: 81px;
+   left: 42px;    
+ }
+
+
+  @font-face {
+    src: url(Fonts/myriad-pro-cufonfonts/MyriadPro-Light.tff);
+    font-family: 'Myriad Pro Light';
+}
+
+@font-face {
+  src: url(Fonts/hind-madurai/HindMadurai-Regular.tff);
+  font-family: 'Hind Madurai Regular';
+}
+
+@font-face {
+  src: url(Fonts/hind-madurai/HindMadurai-SemiBold.tff);
+  font-family: 'Hind Madurai SemiBold';
+}
+
+ul, li {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-align:center;
+}
+
+ul {
+  border-color: rgb(255, 255, 255, 0.3);
+  border-width: 0 0 0.6px 0;
+  border-style: solid;
+}
+
+
+li {
+  
+  padding: 18px 0px;
+  border-color: rgb(255, 255, 255, 0.3);
+  border-width: 0.6px 0 0 0;
+  border-style: solid;
+  font-family: 'Myriad Pro Light';
+  font-size: 12pt;
+  letter-spacing: 0.8px;
+}
+
+@keyframes fadeInUp {
+  
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 50px, 0);
+    transform: translate3d(0, 50px,0);
+    border: 1px solid transparent;
+  }
+
+
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0,0);
+    border: 1px solid transparent;
+ 
+ 
+  }
+
+}
+
+
+
+.fadeInUp {
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp;
+
+}
+
+@keyframes fadeInUp {
+  
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 50px, 0);
+    transform: translate3d(0, 50px,0);
+    border: 1px solid transparent;
+    -webkit-filter: blur(0px);
+   
+  
+  }
+
+
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0,0);
+    border: 1px solid transparent;
+    -webkit-filter: blur(0px);
+ 
+  }
+
+}
+
+.fadeInUp2 {
+  -webkit-animation-name: fadeInUp2;
+  animation-name: fadeInUp2;
+
+}
+
+@keyframes fadeInUp2 {
+  
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 50px, 0);
+    transform: translate3d(0, 50px,0);
+    border: 1px solid transparent;
+    -webkit-filter: blur(0px);
+  
+  }
+
+
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0,0);
+    border: 1px solid transparent;
+    -webkit-filter: blur(0px);
+ 
+  }
+
+}
+
+
+.fadeInUp3 {
+  -webkit-animation-name: fadeInUp3;
+  animation-name: fadeInUp3;
+
+}
+
+
+
+@keyframes fadeInUp3 {
+  
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 50px, 0);
+    transform: translate3d(0, 50px,0);
+    height: 380px;
+    -webkit-filter: blur(0px);
+  }
+
+
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0,0);
+    -webkit-filter: blur(0px);
+ 
+ 
+  }
+
+}
+
+
+
+
+
+

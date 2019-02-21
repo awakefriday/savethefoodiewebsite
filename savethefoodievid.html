@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Save the Foodie</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+    <!-- Bootstrap 4 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="css/savethefoodievid-style.css">
+
+</head>
+
+<body>
+
+        <section>
+
+                 
+                <div class="nav-toggle">
+                    <div class="nav-background"></div>
+                    <div class="nav-toggle-bar"></div>
+                  </div>
+                  <nav class="nav">
+                      <a href="index.html"><img id="logo" src="Images/logo.png" alt="logo"></a>
+                    <ul class="nav-content" style= margin-top:30%>  
+                      <li><a href="savethefoodie1.html">Misconception</a></li> 
+                      <li><a href="savethefoodie2.html">History of Foodies</a></li>
+                      <li><a href="savethefoodie3.html">Foodie Traits</a></li>
+                      <li><a href="savethefoodie4.html">Foodie Influencers</a></li>
+                      <li><a href="savethefoodie5.html">Cooking Blogs</a></li>
+                      <li><a href="savethefoodie6.html">Conclusion</a></li>
+                      <li><a href="savethefoodievid.html">Video: Life of a Foodie</a></li>
+                      <li><a href="savethefoodiear.html">AR Scan</a></li> 
+                    </ul>
+                  
+                  </nav>
+
+     </section>
+            
+    <div id="main-content" class="row">
+        <div class="col-sm=12">
+
+<section>
+    <img id="title" src="Images/Vidtitle.png" alt="title">
+</section>
+
+<section>
+    <p class="p text-justify">
+       This video depicts a life of a foodie through an event of an egg
+       that starts from a farm and ends up on a dish. Each event <br/>
+       will show a trait of a foodie and their relationship with food. </p>
+</section>
+
+<section>
+    <video id="video" controls>
+        <source src="Video/savethefoodievideo.mp4" type="video/mp4">
+            </video>
+</section>
+
+<section>
+    <h1 id="h1">Share the video:</h1>
+    <img id="fb" src="Images/facebook.png" alt="fb">
+    <img id="gp" src="Images/googleplus.png" alt="gp">
+    <img id="tw" src="Images/twitter.png" alt="tw">
+</section>
+
+<section>
+    <img id="lemon" src="Images/lemon2.png" alt="lemon">
+    <img id="cucumber" src="Images/cucumber.png" alt="cucumber">
+    <img id="lettuce" src="Images/lettuce.png" alt="lettuce">
+</section>
+
+        </div>
+    </div>
+
+
+
+
+
+    <!-- Javascript Code-->
+    <script>
+    (function() {
+
+        var hamburger = {
+          navToggle: document.querySelector('.nav-toggle'),
+          nav: document.querySelector('nav'),
+        
+          doToggle: function(e) {
+            e.preventDefault();
+            this.navToggle.classList.toggle('expanded');
+            this.nav.classList.toggle('expanded');
+          }
+        };
+        
+        hamburger.navToggle.addEventListener('click', function(e) { hamburger.doToggle(e); });
+        
+        }());
+        
+    </script>
+
+
+
+</body>
+
+</html>

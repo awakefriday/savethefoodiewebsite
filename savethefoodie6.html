@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Save the Foodie</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap 4 -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="css/savethefoodie6-style.css">
+
+  </head>
+
+  <body>
+
+        <section>
+
+                 
+                <div class="nav-toggle">
+                    <div class="nav-background"></div>
+                    <div class="nav-toggle-bar"></div>
+                  </div>
+                  <nav class="nav">
+                      <a href="index.html"><img id="logo" src="Images/logo.png" alt="logo"></a>
+                    <ul class="nav-content" style= margin-top:30%>  
+                      <li><a href="savethefoodie1.html">Misconception</a></li> 
+                      <li><a href="savethefoodie2.html">History of Foodies</a></li>
+                      <li><a href="savethefoodie3.html">Foodie Traits</a></li>
+                      <li><a href="savethefoodie4.html">Foodie Influencers</a></li>
+                      <li><a href="savethefoodie5.html">Cooking Blogs</a></li>
+                      <li><a href="savethefoodie6.html">Conclusion</a></li>
+                      <li><a href="savethefoodievid.html">Video: Life of a Foodie</a></li>
+                      <li><a href="savethefoodiear.html">AR Scan</a></li> 
+                    </ul>
+                  
+                  </nav>
+                </section>
+
+
+    <div id="main-content" class="row">
+        <div class="col-sm=12"> 
+
+            <section>
+                <a href="savethefoodie5.html">
+                <img id="arrow" src="Images/arrow.png" alt="back button">
+              </a>
+   </section>
+   
+
+<section>
+    <img id="end" src="Images/end.png" alt="end">
+    <img id="endp" src="Images/endp.png" alt="endp">
+</section>
+
+<section>
+    <img id="emptynuts" src="Images/emptynuts.png" alt="empty nuts">
+    <img id="croissant" src="Images/croissant.png" alt="croissant">
+    <img id="plate" src="Images/plate.png" alt="plate">
+    <img id="plate2" src="Images/plate2.png" alt="plate2">
+</section>
+
+<section>
+    <img id="bar6" src="Images/bar6.png" alt="bar6">
+</section>
+
+
+
+        </div>
+    </div>
+
+    <script>
+     (function() {
+
+var hamburger = {
+  navToggle: document.querySelector('.nav-toggle'),
+  nav: document.querySelector('nav'),
+
+  doToggle: function(e) {
+    e.preventDefault();
+    this.navToggle.classList.toggle('expanded');
+    this.nav.classList.toggle('expanded');
+  }
+};
+
+hamburger.navToggle.addEventListener('click', function(e) { hamburger.doToggle(e); });
+
+}());
+    </script>
+  </body>
+  </html>

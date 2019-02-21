@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Save the Foodie</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+
+  <!-- Bootstrap 4 -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+
+
+
+  <link rel="stylesheet" type="text/css" href="css/savethefoodie4-style.css">
+
+  </head>
+  <body>
+
+        <section>
+
+                 
+                <div class="nav-toggle">
+                    <div class="nav-background"></div>
+                    <div class="nav-toggle-bar"></div>
+                  </div>
+                  <nav class="nav">
+                      <a href="index.html"><img id="logo" src="Images/logo.png" alt="logo"></a>
+                    <ul class="nav-content" style= margin-top:30%>  
+                      <li><a href="savethefoodie1.html">Misconception</a></li> 
+                      <li><a href="savethefoodie2.html">History of Foodies</a></li>
+                      <li><a href="savethefoodie3.html">Foodie Traits</a></li>
+                      <li><a href="savethefoodie4.html">Foodie Influencers</a></li>
+                      <li><a href="savethefoodie5.html">Cooking Blogs</a></li>
+                      <li><a href="savethefoodie6.html">Conclusion</a></li>
+                      <li><a href="savethefoodievid.html">Video: Life of a Foodie</a></li>
+                      <li><a href="savethefoodiear.html">AR Scan</a></li> 
+                    </ul>
+                  
+                  </nav>
+                </section>
+
+    <div id="main-content" class="row">
+        <div class="col-sm=12">  
+
+                <section>
+                        <a href="savethefoodie3.html">
+                        <img id="arrow" src="Images/arrow.png" alt="back button">
+                      </a>
+           </section>
+           
+
+            <section>
+                <img id="title" src="Images/fititle.png" alt="title">
+            </section>
+
+            <section>
+                <img id="cloth" src="Images/cloth.png" alt="cloth">
+                <img id="swipe" src="Images/swipeme.png" alt="swipeme">
+            </section>
+
+    <section id="slideshow">
+        
+        <div id="demo" class="carousel slide" data-ride="carousel" data-interval="false">
+
+            
+            <!-- The slideshow -->
+            <div class="carousel-inner">
+
+                <div id="jo" class="carousel-item active">
+                <a href="https://www.instagram.com/jamieoliver/?hl=en" target="_blank">
+                    <img src="Images/jo.png" alt="Jamie Oliver">
+                </a>
+                </span>
+                
+                </div>
+
+                <div id="lv" class="carousel-item">
+                <a href="https://www.instagram.com/luisegreenkitchenstories/?hl=en" target="_blank">
+                    <img src="Images/lv.png" alt="Luise Vindahl">
+                </a>
+                </div>
+                <div id="sp" class="carousel-item">
+                <a href="https://www.instagram.com/uglyproduceisbeautiful/?hl=en" target="_blank">   
+                    <img src="Images/sp.png" alt="Sarah Phillips">
+                </a>
+                </div>
+            </div>
+
+            
+        </div>
+    </section>
+
+    <section>
+
+        <div id="rectangle">
+       
+        <img id="icon" src="Images/insta.png" alt="insta icon">
+       
+        <article id="chef-detail">
+            <h1 id="first">@jamieoliver</h1>
+            <p>This celebrity chef is a big proponent when it<br/>
+                comes to telling people what to buy or eat. He<br/>
+                teaches them what is inside certain types of<br/>
+                food and dishes.
+            </p>
+        </article>
+
+
+
+        </div>
+
+    </section>
+
+    <section>
+        <button class="butt4n">Cooking Blogs</button>
+    </section>
+
+    <section>
+        <img id="bar4" src="Images/bar4.png" alt="bar4">
+    </section>
+
+         </div>
+    </div>
+
+    <script>
+      $(document).ready(function(){
+
+            $('.butt4n').click(function(){
+                location.href = "savethefoodie5.html";
+            });
+
+            setInterval(function(){
+
+                if ($("#jo").hasClass("active")) {
+
+                    $("#chef-detail").empty(); // Empty the contents
+
+                    var chefName = $("<h1></h1>").text("@jamieoliver");
+
+                    chefName.attr("id", "first");
+
+                    var chefBio = $("<p></p>").html("This celebrity chef is a big proponent when it <br/> comes to telling people what to buy or eat. He <br/> teaches them what is inside certain types of <br/>food and dishes.");
+
+                    $("#chef-detail").append(chefName, chefBio);
+
+                } else if ($("#lv").hasClass("active")) {
+
+                    $("#chef-detail").empty(); // Empty the contents
+
+                    var chefName = $("<h1></h1>").text("@luisegreenkitchenstories");
+
+                    chefName.attr("id", "first");
+
+                    var chefBio = $("<p></p>").html("A hard-working influncer who broadens the<br/>public's eating experince by introducing many<br/> kinds of recipes that involves a wide range of <br/> rare ingredients.");
+
+                    $("#chef-detail").append(chefName, chefBio);
+
+                } else if ($("#sp").hasClass("active")) {
+
+                    $("#chef-detail").empty(); // Empty the contents
+
+                    var chefName = $("<h1></h1>").text("@uglyproduceisbeautiful");
+
+                    chefName.attr("id", "first");
+
+                    var chefBio = $("<p></p>").html("Sarah Phillips is well-known for her blog 'Ugly <br/>Produce is Beautiful' that educates poeple on <br/>food wastage as well as using below cosmetic standard fruits and vegetables in recipes.");
+
+                    $("#chef-detail").append(chefName, chefBio);
+
+                }
+
+
+            },1000);
+        });
+
+            (function() {
+
+var hamburger = {
+  navToggle: document.querySelector('.nav-toggle'),
+  nav: document.querySelector('nav'),
+
+  doToggle: function(e) {
+    e.preventDefault();
+    this.navToggle.classList.toggle('expanded');
+    this.nav.classList.toggle('expanded');
+  }
+};
+
+hamburger.navToggle.addEventListener('click', function(e) { hamburger.doToggle(e); });
+
+}());
+
+
+
+
+
+    </script>
+  </body>
+  </html>

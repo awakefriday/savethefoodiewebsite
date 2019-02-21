@@ -1,0 +1,296 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #F0D5A3;
+}
+
+/* This is mandatory CSS code for Bootstrap Grid */
+.row, .row div {
+    margin: 0;
+    padding: 0;
+}
+
+#main-content {
+    height: 100vh;
+}
+
+/* Header footer fruits */
+.head-foot-fruit img {
+    width: 100vw;
+   
+}
+
+#head-fruit {
+    position: relative;
+    animation: fadeInDown 0.6s linear forwards;
+  
+}
+
+#foot-fruit {
+    position: absolute;
+    animation: fadeInUp 0.6s linear forwards;
+    bottom: 0;
+}
+
+/* Main content */
+section #logo {
+    width: 70vw;
+    margin: -21vw 17vw;
+    animation: fadeInUp2 0.4s linear forwards;
+    animation-delay: 0.8s;
+    opacity: 0;
+    transition: height 1.5 ease;
+    -webkit-transition: height 1.5 ease;
+    -o-transition: height 1.5 ease;
+}
+
+
+/* Text */
+section .introtxt {
+    margin: 12vw 21vw;
+    font-size: 10pt;
+    color: #515151;
+    line-height: 3vh;
+    font-family: 'Hind Madurai Light';
+    animation: fadeInUp2 0.4s linear forwards;
+    animation-delay: 1s;
+    opacity: 0;
+}
+
+
+
+.butt0n {
+    background-color: #ED9822;
+    border: none;
+    border-radius: 6px;
+    color: #FCFAFC;
+    padding: 2vw 6vw;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 11pt;
+    margin: 4px 2px;
+    cursor: pointer;
+    position: absolute;
+    z-index: 10;
+    margin: 2vw 35vw;
+    animation: fadeInUp2 0.4s linear forwards;
+    animation-delay: 1.2s;
+    opacity: 0;
+}
+
+
+
+.butt0n:active {
+    background-color: rgb(184, 110, 26);
+    text-decoration: none;
+    color: rgb(218, 216, 216);
+}
+
+
+@-webkit-keyframes fadeInDown {
+
+    from {
+      opacity: 0;
+      -webkit-transform: translate3d(0, -100%, 0);
+      transform: translate3d(0, -100%, 0);
+  
+    }
+  
+    to {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+  
+    }
+  
+  }
+  
+  
+  @keyframes fadeInDown {
+  
+    from {
+      opacity: 0;
+      -webkit-transform: translate3d(0, -30%, 0);
+      transform: translate3d(0, -30%, 0);
+  
+    }
+   
+    to {
+  
+      opacity: 1;
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+  
+    }
+  
+  }
+  
+  
+  .fadeInDown {
+    -webkit-animation-name: fadeInDown;
+    animation-name: fadeInDown;
+  
+  }
+
+
+  @-webkit-keyframes fadeInUp {
+
+    from {
+      opacity: 0;
+      -webkit-transform: translate3d(0, 100%, 0);
+      transform: translate3d(0, 100%, 0);
+      
+    }
+  
+    to {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+      
+    }
+  
+  }
+
+  .fadeInUp {
+    -webkit-animation-name: fadeInUp;
+    animation-name: fadeInUp;
+  
+  }
+  
+  
+  @keyframes fadeInUp {
+  
+    from {
+      opacity: 0;
+      -webkit-transform: translate3d(0, 30%, 0);
+      transform: translate3d(0, 30%, 0);
+  
+    }
+  
+  
+  
+    to {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    
+  
+    }
+  
+  }
+  
+  
+  
+  @-webkit-keyframes fadeInUp2 {
+
+    from {
+      opacity: 0;
+      -webkit-transform: translate3d(0, 100%, 0);
+      transform: translate3d(0, 100%, 0);
+      
+    }
+  
+    to {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+ 
+    }
+  
+  }
+  
+  
+  @keyframes fadeInUp2 {
+  
+    from {
+      opacity: 0;
+      -webkit-transform: translate3d(0, 50px, 0);
+      transform: translate3d(0, 50px,0);
+      
+    
+    }
+  
+  
+  
+    to {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0,0);
+
+   
+   
+    }
+  
+  }
+  
+  
+  
+  .fadeInUp2 {
+    -webkit-animation-name: fadeInUp;
+    animation-name: fadeInUp;
+  
+  }
+
+  @-webkit-keyframes fadeOut {
+
+    from {
+  
+      opacity: 1;
+  
+    }
+  
+  
+  
+    to {
+  
+      opacity: 0;
+  
+    }
+  
+  }
+  
+  
+  
+  @keyframes fadeOut {
+  
+    from {
+  
+      opacity: 1;
+  
+    }
+  
+  
+    to {
+  
+      opacity: 0;
+  
+    }
+  
+  }
+  
+  
+  .fadeOut {
+  
+    -webkit-animation-name: fadeOut;
+  
+    animation-name: fadeOut;
+  
+  }
+
+  
+  
+
+
+
+
+@font-face {
+    src: url(Fonts/hind-madurai/Hind-Madurai-Light.tff);
+    font-family: 'Hind Madurai Light';
+}
+
+@font-face {
+    src: url(Fonts/myriad-pro-cufonfonts/MyriadPro-Light.tff);
+    font-family: 'Myriad Pro Light';
+}
+
+

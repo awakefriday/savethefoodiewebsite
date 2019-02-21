@@ -1,0 +1,477 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #F0D5A3;
+}
+
+.row, .row div {
+    margin: 0;
+    padding: 0;
+}
+
+#arrow {
+  position: absolute;
+  width: 7vw;
+  margin: 19vw 5vw;
+ 
+}
+
+#bar3 {
+  position: absolute;
+  width: 96vw;
+  margin: 175.3vw 2vw;
+}
+
+#turnip {
+    position: absolute;
+    width: 19vw;
+    top: 21px;
+    left: 316px;
+    animation: fadeInUp 0.4s linear forwards;
+    opacity: 0;
+}
+
+#lemon {
+    position: absolute;
+    width: 15vw;
+    top: 615px;
+    left: 0px;
+    animation: fadeInUp 0.4s linear forwards;
+    opacity: 0;
+    animation-delay: 1.2s;
+}
+
+#traits {
+    position: absolute;
+    width: 51vw;
+    margin: 16vw 24vw;
+    animation: fadeInUp 0.4s linear forwards;
+    opacity: 0;
+}
+
+ .scroll {
+    position: absolute;
+    background-color:#F0D5A3;
+    top: 30vw;
+    width: 100vw;
+    height: 65vh;
+    overflow: scroll;
+ }
+
+
+#apples {
+position: absolute;
+width: 17vw;
+top: 24px;
+left: 31px;
+animation: fadeInUp 0.4s linear forwards;
+animation-delay: 0.2s;
+opacity: 0;
+}
+
+#first {
+    position: absolute;
+    right: 105px;
+    font-size: 13pt;
+    color: #961d28;
+    top: 13px;
+    font-family: "Hind Madurai SemiBold";
+    animation: fadeInUp 0.4s linear forwards;
+    animation-delay: 0.2s;
+    opacity: 0;
+}
+
+p1 {
+   position: absolute;
+   right: 46px;
+   font-size: 9pt;
+   color: #515251;
+   top: 35px;
+   line-height: 15px;
+   animation: fadeInUp 0.4s linear forwards;
+   animation-delay: 0.2s;
+   opacity: 0;
+}
+
+#exp {
+    position: absolute;
+    width: 17vw;
+    top: 136px;
+    right: 41px;
+    animation: fadeInUp 0.4s linear forwards;
+    animation-delay: 0.4s;
+    opacity: 0;
+}
+
+#second {
+    position: absolute;
+    left: 35px;
+    font-size: 13pt;
+    color: #961d28;
+    top: 125px;
+    font-family: "Hind Madurai SemiBold";
+    animation: fadeInUp 0.4s linear forwards;
+    animation-delay: 0.4s;
+    opacity: 0;
+}
+
+p2 {
+    position: absolute;
+    left: 36px;
+    font-size: 9pt;
+    color: #515251;
+    top: 148px;
+    line-height: 15px;
+    animation: fadeInUp 0.4s linear forwards;
+    animation-delay: 0.4s;
+    opacity: 0;
+}
+
+#vs {
+    position: absolute;
+    width: 22vw;
+    top: 246px;
+    left: 29px;
+    animation: fadeInUp 0.4s linear forwards;
+    animation-delay: 0.6s;
+    opacity: 0;
+}
+
+#third {
+    position: absolute;
+    right: 104px;
+    font-size: 13pt;
+    color: #961d28;
+    top: 236px;
+    font-family: "Hind Madurai SemiBold";
+    animation: fadeInUp 0.4s linear forwards;
+    animation-delay: 0.6s;
+    opacity: 0;
+}
+
+p3 {
+    position: absolute;
+    right: 33px;
+    font-size: 9pt;
+    top: 260px;
+    color: #515251;
+    line-height: 15px;
+    animation: fadeInUp 0.4s linear forwards;
+    animation-delay: 0.6s;
+    opacity: 0;
+}
+
+#book {
+    position: absolute;
+    width: 17vw;
+    top: 354px;
+    right: 40px;
+    animation: fadeInUp 0.4s linear forwards;
+    animation-delay: 0.8s;
+    opacity: 0;
+}
+
+#fourth {
+    position:absolute;
+    left: 44px;
+    font-size: 13pt;
+    color: #961d28;
+    top: 345px;
+    font-family: "Hind Madurai SemiBold";
+    animation: fadeInUp 0.4s linear forwards;
+    animation-delay: 0.8s;
+    opacity: 0;
+}
+
+p4 {
+    position: absolute;
+    left: 44px;
+    font-size: 9pt;
+    top: 369px;
+    color: #515251;
+    line-height: 15px;
+    animation: fadeInUp 0.4s linear forwards;
+    animation-delay: 0.8s;
+    opacity: 0;
+}
+
+#carrot{
+    position: absolute;
+    width: 20vw;
+    top: 451px;
+    left: 43px;
+    animation: fadeInUp 0.4s linear forwards;
+    animation-delay: 1s;
+    opacity: 0;
+}
+
+#fifth {
+    position: absolute;
+    right: 89px;
+    font-size: 13pt;
+    color: #961d28;
+    top: 443px;
+    font-family: "Hind Madurai SemiBold";
+    animation: fadeInUp 0.4s linear forwards;
+    animation-delay: 1s;
+    opacity: 0;
+}
+
+p5 {
+    position: absolute;
+    right: 34px;
+    font-size: 9pt;
+    top: 465px;
+    color: #515251;
+    line-height: 15px;
+    animation: fadeInUp 0.4s linear forwards;
+    animation-delay: 1s;
+    opacity: 0;
+}
+
+.butt3n {
+    background-color: #ED9822;
+    border: none;
+    border-radius: 6px;
+    color: #FCFAFC;
+    padding: 7px 15px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 647px 125px;
+    cursor: pointer;
+    position: absolute;
+    letter-spacing: 0.8px;
+    font-family:"Myriad Pro Light";
+    animation: fadeInUp 0.4s linear forwards;
+    opacity: 0;
+    animation-delay: 1.2s;
+   
+}
+
+.butt3n:active {
+    background-color: rgb(184, 110, 26);
+    text-decoration: none;
+    color: rgb(218, 216, 216);
+  }
+
+ 
+ 
+@font-face {
+    src: url(Fonts/myriad-pro-cufonfonts/MyriadPro-Light.tff);
+    font-family: 'Myriad Pro Light';
+}
+
+@font-face {
+  src: url(Fonts/hind-madurai/HindMadurai-SemiBold.tff);
+  font-family: 'Hind Madurai SemiBold';
+}
+
+
+.fadeInUp {
+    -webkit-animation-name: fadeInUp;
+    animation-name: fadeInUp;
+  
+  }
+  
+  @keyframes fadeInUp {
+  
+    from {
+      opacity: 0;
+      -webkit-transform: translate3d(0, 50px, 0);
+      transform: translate3d(0, 50px,0);
+
+    }
+  
+  
+  
+    to {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0,0);
+     
+   
+   
+    }
+  
+  }
+
+  * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+  }
+  *:focus {
+    outline: none;
+  }
+  html {  
+    margin: 0;
+    padding: 0;
+    background-color: #F0D5A3;
+    color: white;
+    
+  }
+  
+  body {
+    background: none;
+    color: inherit;
+    font: inherit;
+  }
+  
+  a:link, a:visited, a:hover, a:active {
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  
+  
+  .nav-background {
+      position: absolute;
+      border-radius: 5px;
+      background: #ED9822;
+      padding: 5px; 
+      width: 10vw;
+      height: 9vw; 
+      top: -9px;
+      left: -49px;
+  
+  }
+  
+  /* nav toggle */
+  .nav-toggle {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    cursor: pointer;
+    left: 4rem;
+    position: fixed;
+    top: 2rem;
+    width: 1.9rem;
+    height: 20px;
+    z-index: 2;
+    
+  }
+  
+  
+  .nav-toggle:hover {
+    opacity: 0.8;
+  }
+  .nav-toggle .nav-toggle-bar, .nav-toggle .nav-toggle-bar::after, .nav-toggle .nav-toggle-bar::before {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    background: white;
+    content: '';
+    height: 4px;
+    width: 100%;
+  
+  }
+  .nav-toggle .nav-toggle-bar {
+    margin-top: 0;
+    left: -43px;
+  }
+  .nav-toggle .nav-toggle-bar::after {
+    margin-top: 0.5rem;
+  }
+  .nav-toggle .nav-toggle-bar::before {
+    margin-top: -0.5rem;
+  }
+  .nav-toggle.expanded .nav-toggle-bar {
+    background: transparent;
+  }
+  .nav-toggle.expanded .nav-toggle-bar::after, .nav-toggle.expanded .nav-toggle-bar::before {
+    background: white;
+    margin-top: 0;
+  }
+  .nav-toggle.expanded .nav-toggle-bar::after {
+    -ms-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+  .nav-toggle.expanded .nav-toggle-bar::before {
+    -ms-transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+  }
+  /* nav */
+  .nav {
+    -webkit-transition: left 0.5s ease;
+    -moz-transition: left 0.5s ease;
+    -ms-transition: left 0.5s ease;
+    -o-transition: left 0.5s ease;
+    transition: left 0.5s ease;
+      background: #ED9822;
+      cursor: pointer;
+      font-size: 2rem;
+      height: 101vh;
+      left: -18rem;
+      padding: 100px;
+      position: fixed;
+      width: 18rem;
+      z-index: 1;
+      top: -1px;
+  }
+  
+  .nav.expanded {
+    left: 0;
+  }
+  
+  .nav ul {
+    width: 83%;
+    position: absolute;
+    top: 50%;
+    left: 25px;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  
+  #logo {
+     position: absolute;
+     width: 55vw;
+     top: 81px;
+     left: 42px;    
+   }
+  
+  
+  ul, li {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-align:center;
+  }
+  
+  ul {
+    border-color: rgb(255, 255, 255, 0.3);
+    border-width: 0 0 0.6px 0;
+    border-style: solid;
+  }
+  
+  
+  li {
+    
+    padding: 18px 0px;
+    border-color: rgb(255, 255, 255, 0.3);
+    border-width: 0.6px 0 0 0;
+    border-style: solid;
+    font-family: 'Myriad Pro Light';
+    font-size: 12pt;
+    letter-spacing: 0.8px;
+  }
+  
+  
+  

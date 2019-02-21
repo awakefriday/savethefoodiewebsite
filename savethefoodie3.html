@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Save the Foodie</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi"
+    />
+
+    <!-- Bootstrap 4 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="css/savethefoodie3-style.css">
+
+</head>
+
+<body>
+
+
+    <section>
+
+
+        <div class="nav-toggle">
+            <div class="nav-background"></div>
+            <div class="nav-toggle-bar"></div>
+        </div>
+        <nav class="nav">
+            <a href="index.html">
+                <img id="logo" src="Images/logo.png" alt="logo">
+            </a>
+            <ul class="nav-content" style= margin-top:30%>
+                <li>
+                    <a href="savethefoodie1.html">Misconception</a>
+                </li>
+                <li>
+                    <a href="savethefoodie2.html">History of Foodies</a>
+                </li>
+                <li>
+                    <a href="savethefoodie3.html">Foodie Traits</a>
+                </li>
+                <li>
+                    <a href="savethefoodie4.html">Foodie Influencers</a>
+                </li>
+                <li>
+                    <a href="savethefoodie5.html">Cooking Blogs</a>
+                </li>
+                <li>
+                    <a href="savethefoodie6.html">Conclusion</a>
+                </li>
+                <li>
+                    <a href="savethefoodievid.html">Video: Life of a Foodie</a>
+                </li>
+                <li>
+                    <a href="savethefoodiear.html">AR Scan</a>
+                </li>
+            </ul>
+
+        </nav>
+    </section>
+
+
+    <section>
+        <img id="traits" src="Images/fttitle.png" alt="title">
+    </section>
+
+    <section>
+        <div class="scroll">
+
+            <img id="apples" src="Images/apples.png" alt="apples">
+            <h1 id="first">Prefers local ingredients</h1>
+            <p1>Ingredients that are from the farmer's markets</br>
+                reassures the foodies that what they eat is</br>
+                fresh and prices paid for it will support the</br>
+                local business. </p1>
+
+            <img id="exp" src="Images/exp.png" alt="experience">
+            <h1 id="second">Food is an experience</h1>
+            <p2>Foodies crave to have their sense stimulated</br>
+                when eating food. Latest food trends and</br>
+                exciting food experiences will provide that</br>
+                sense of adventure that they are looking for. </p2>
+
+            <img id="vs" src="Images/vs.png" alt="vs">
+            <h1 id="third">Organic vs Low-calorie</h1>
+            <p3>Foodies care about eating right than checking</br>
+                for weight loss. Hence, they mostly choose to</br>
+                eat food of natural ingredients than food with</br>
+                reduced fat.</p3>
+
+            <img id="book" src="Images/book.png" alt="book">
+            <h1 id="fourth">Food education</h1>
+            <p4>These people also like to educate themselves</br>
+                and learn from the restaurants on how they</br>
+                plan, prepare and present the food.</p4>
+
+
+            <img id="carrot" src="Images/carrot.png" alt="carrot">
+            <h1 id="fifth">Sustainable gastronomy</h1>
+            <p5>Foodies like eating at those restaurants who</br>
+                consider on where the food is sourced and</br>
+                how they are grown in a way that is not to be</br>
+                wasteful to the environment.</p5>
+        </div>
+    </section>
+
+    <section>
+        <img id="turnip" src="Images/turnip.png" alt="turnip">
+        <img id="lemon" src="Images/lemon.png" alt="lemon">
+    </section>
+
+    <section>
+        <a href="savethefoodie2.html">
+            <img id="arrow" src="Images/arrow.png" alt="back button">
+        </a>
+    </section>
+
+    <section>
+        <button class="butt3n">Foodie Influencers</button>
+    </section>
+
+    <section>
+        <img id="bar3" src="Images/bar3.png" alt="bar3">
+    </section>
+
+
+    <script>
+        $(document).ready(function () {
+            $('.butt3n').click(function () {
+                location.href = "savethefoodie4.html";
+
+
+            });
+        });
+
+
+        (function () {
+
+            var hamburger = {
+                navToggle: document.querySelector('.nav-toggle'),
+                nav: document.querySelector('nav'),
+
+                doToggle: function (e) {
+                    e.preventDefault();
+                    this.navToggle.classList.toggle('expanded');
+                    this.nav.classList.toggle('expanded');
+                }
+            };
+
+            hamburger.navToggle.addEventListener('click', function (e) { hamburger.doToggle(e); });
+
+        }());
+
+    </script>
+
+
+</body>
+
+</html>

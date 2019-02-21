@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Save the Foodie</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+
+  <!-- Bootstrap 4 -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="css/savethefoodie1-style.css">
+
+
+
+  </head>
+
+  <body>
+
+    
+      <div id="main-content" class="row">
+          <div class="col-sm=12">
+
+              <section>
+                  <img id="misconception" src="Images/Misconception.png" alt="misconception title">
+                </section>
+            
+                <section id="photos">
+                  <img src="Images/photos.png" alt="photos">
+                </section>
+
+                            
+                <section>
+                  <h1 id="what">What is the confusion?</h1>
+                  <p1 id="whatc">Many people are unclear of what a foodie really is.They</br>
+                                 usually associate them with other food ethusiasts. Are</br>
+                                 they a ravening gourmand? Or perhaps a fastidious food</br> 
+                                 snob? Maybe a curious epicure?</p1>
+                            
+                  <h1 id="why">Why is there confusion?</h1>
+                  <p2 id="whyc">People who have been labeled in the foodie category</br>
+                                have different interpretations as to what it implies.</br>
+                                Some never cared about the true meaning and just go</br>
+                                on to do anything food related whether it is taking</br>
+                                pictures of food or wrting about it. Hence, it feels like</br>
+                                there is no clear meaning to what really is a 'foodie'.</p2>
+                </section>
+
+              <section>
+                <button class="butt1n">History of Foodies</button>
+              </section>
+
+<section>
+
+                 
+<div class="nav-toggle">
+    <div class="nav-background"></div>
+    <div class="nav-toggle-bar"></div>
+  </div>
+  <nav class="nav">
+      <a href="index.html"><img id="logo" src="Images/logo.png" alt="logo"></a>
+    <ul class="nav-content" style= margin-top:30%>  
+      <li><a href="savethefoodie1.html">Misconception</a></li> 
+      <li><a href="savethefoodie2.html">History of Foodies</a></li>
+      <li><a href="savethefoodie3.html">Foodie Traits</a></li>
+      <li><a href="savethefoodie4.html">Foodie Influencers</a></li>
+      <li><a href="savethefoodie5.html">Cooking Blogs</a></li>
+      <li><a href="savethefoodie6.html">Conclusion</a></li>
+      <li><a href="savethefoodievid.html">Video: Life of a Foodie</a></li>
+      <li><a href="savethefoodiear.html">AR Scan</a></li> 
+    </ul>
+  
+  </nav>
+</section>
+
+<section>
+  <a href="index.html">
+  <img id="arrow" src="Images/arrow.png" alt="back button">
+</a>
+</section>
+
+<section>
+  <img id="cheese" src="Images/cheese.png" alt="cheese">
+  <img id="garlic" src="Images/garlic.png" alt="garlic">
+  <img id="onion" src="Images/onion.png" alt="onion">
+  <img id="tomato" src="Images/tomato.png" alt="tomato">
+  <img id="banana" src="Images/banana.png" alt="banana">
+</section>
+
+<section>
+  <img id="bar1" src="Images/bar1.png" alt="bar">
+</section>
+
+</div>
+</div>
+
+    
+   
+    <script>
+     (function() {
+
+var hamburger = {
+  navToggle: document.querySelector('.nav-toggle'),
+  nav: document.querySelector('nav'),
+
+  doToggle: function(e) {
+    e.preventDefault();
+    this.navToggle.classList.toggle('expanded');
+    this.nav.classList.toggle('expanded');
+  }
+};
+
+hamburger.navToggle.addEventListener('click', function(e) { hamburger.doToggle(e); });
+
+}());
+ 
+
+ 
+        $(document).ready(function(){
+     $('.butt1n').click(function(){
+        location.href = "savethefoodie2.html";
+         });
+     });
+    </script>
+
+   
+    
+    
+  </body>
+  </html>
